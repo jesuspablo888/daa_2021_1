@@ -31,7 +31,7 @@ mes=int(input("mes(1-12)?:"))
 print(f"En el estado de {Edo[estado-1]} Llovió un promedio de {esta_lista[anio-2017][estado-1][mes-1]}"
       +f" centímetros cúbicos en el mes de {M[mes-1]} de {anio}\n----------------------------------------------------")
 
-print(f"En el estado de {Edo[estado-1]} Llovió un promedio Anual de {esta_lista[anio-2017][estado-1][12]}"
+print(f"En el estado de {Edo[estado-1]} Llovió un promedio Anual de {'%.2f'%(float(esta_lista[anio-2017][estado-1][12])/12)}"
       +f" centímetros cúbicos\n----------------------------------------------------")
 print(f"La suma de los 12 meses del estado de {Edo[estado-1]} de {anio} es: {'%.2f'%Suma(anio,estado)} n----------------------------------------------------")
 print("+++++++++++++++++++++el mes que mas llovió+++++++++++++++++++++\n\n\n")
